@@ -13,20 +13,34 @@ class Api::SubsController < ApplicationController
   
   # follow pattern to fill out the controller
 
+  # new edit - forms which is handle on the react side not here
+
+  # Controller for all actions they to return 
+  # html json, xml, redirect to a action that does
+
+  # skinny controller fat model
+  # callback, trigger logic on a actions 
+  # before_action only, except
+  # after_action
+  # skip_before_action
+  # skip_after_action
+
+  # class ApplicationController < ActionController::Base
+  #   before_action :verify_paid, only: [:index, :create]
   
-  
-  def index
-  end
+  #   def verify_paid
+  #     @paid = true
+  #   end
+  # end
 
-  def show
-  end
+  # Pattern
+  # Model, -> Sub
+  # Singular, Capital 
+  # def index 
+  #   render json: Model_name.all 
+  # end
 
-  def create
-  end
-
-  def update
-  end
-
-  def destroy
-  end
-end
+  # def show
+  #   @model_name = Model_name.find(params[:id])
+  #   render json: @model_name
+  # end
