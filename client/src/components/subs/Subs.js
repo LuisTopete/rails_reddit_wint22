@@ -60,4 +60,4 @@ const Subs = () => {
   )
 }
 
-export default Subs
+export default Subs;

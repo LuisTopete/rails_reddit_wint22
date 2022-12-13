@@ -39,7 +39,6 @@ const SubForm = ({ addSub, id, title, updateSub, setEdit }) => {
           name='comment'
           value={sub.comment}
           onChange={(e) => setSub({...sub, comment: e.target.value })}
-
           required
         ></textarea> */}
         {/* number / integer */}
@@ -48,7 +47,6 @@ const SubForm = ({ addSub, id, title, updateSub, setEdit }) => {
           type='number'
           value={sub.age}
           onChange={(e) => setSub({...sub, age: e.target.value })}
-
           required
         /> */}
         {/* number / float*/}
@@ -58,7 +56,6 @@ const SubForm = ({ addSub, id, title, updateSub, setEdit }) => {
           step="0.01"
           value={sub.price}
           onChange={(e) => setSub({...sub, price: e.target.value })}
-
           required
         /> */}
         {/* Boolean */}
